@@ -6,6 +6,8 @@ The innovation of this paper is that the defocus error and singularity of the so
 
 Fig.1 shows the comparison of calibration results between screen-targets under different distances, and can be found that it (phase-iter) is robustness to defocus for camera calibration whether the working distance changed from d1 to d3. 
 
+> If you unable to see the images, you can visit the URL: https://gitee.com/GFLYMAN/visual-guidence-calibration, which is a copy of our codes in Gitee website.
+
 |    ![image-20221213122459941](assets/202212131224999.png)    |
 | :----------------------------------------------------------: |
 | Fig.1 Comparison of calibration results between screen-targets under different distances: d1(focused), d2(defocused-slight), d3(defocused-severe). |
