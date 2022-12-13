@@ -147,7 +147,7 @@ Before that you have to correct the system gamma value, and it is carried out by
 
 ## Citation
 
-If you find our code or paper is useful,please consider citing:
+If you find our code or paper is useful, please consider citing:
 
 ```tex
  // TODO: our paper is still under review in the Optics Journal <Measurement>
