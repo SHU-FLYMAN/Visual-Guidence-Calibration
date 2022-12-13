@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UIClass</class>
+ <widget class="QMainWindow" name="UIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>960</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MonoCalib</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="ImgWindow" name="imgWindow">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>960</width>
+      <height>768</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_calib">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>770</y>
+      <width>441</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Calib</string>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>441</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>5</y>
+        <width>401</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="button_visual">
+         <property name="text">
+          <string>Nextpose</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="button_project">
+         <property name="text">
+          <string>Project</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="button_calib">
+         <property name="text">
+          <string>Calib</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="button_screen_write">
+         <property name="text">
+          <string>Images</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="button_config">
+         <property name="text">
+          <string>Config</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_cam">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>770</y>
+      <width>461</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Camera</string>
+    </property>
+    <widget class="QFrame" name="frame_cam">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>431</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_ID">
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_ID"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="button_camera_connect">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_shutter">
+        <property name="text">
+         <string>Exp(ms)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_shutter">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>3</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_gain">
+        <property name="text">
+         <string>Gain(x)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="spinBox_gain">
+        <property name="maximum">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="button_camera_capture">
+        <property name="text">
+         <string notr="true">Capture</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ImgWindow</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">imgwindow.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="UI.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>button_camera_connect</sender>
+   <signal>clicked()</signal>
+   <receiver>UIClass</receiver>
+   <slot>slot_camera_connect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>829</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>-16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_camera_capture</sender>
+   <signal>clicked()</signal>
+   <receiver>UIClass</receiver>
+   <slot>slot_camrea_capture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>851</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>-16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_screen_write</sender>
+   <signal>clicked()</signal>
+   <receiver>UIClass</receiver>
+   <slot>slot_screen_write()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>670</x>
+     <y>851</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>567</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_project</sender>
+   <signal>clicked()</signal>
+   <receiver>UIClass</receiver>
+   <slot>slot_project_capture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>838</x>
+     <y>851</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>741</x>
+     <y>-16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_config</sender>
+   <signal>clicked()</signal>
+   <receiver>UIClass</receiver>
+   <slot>slot_config()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>851</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>-22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_calib</sender>
+   <signal>clicked()</signal>
+   <receiver>UIClass</receiver>
+   <slot>slot_calib()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>894</x>
+     <y>837</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>869</x>
+     <y>-8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_visual</sender>
+   <signal>clicked()</signal>
+   <receiver>UIClass</receiver>
+   <slot>slot_visual()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>717</x>
+     <y>838</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>446</x>
+     <y>-23</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_camera_connect()</slot>
+  <slot>slot_camrea_capture()</slot>
+  <slot>slot_screen_write()</slot>
+  <slot>slot_project_capture()</slot>
+  <slot>slot_config()</slot>
+  <slot>slot_calib()</slot>
+  <slot>slot_visual()</slot>
+ </slots>
+</ui>

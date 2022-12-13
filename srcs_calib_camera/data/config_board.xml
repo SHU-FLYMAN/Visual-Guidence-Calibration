@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<Settings>
+  <!-- ######### 标定配置 #########-->
+  <!-- BoardSize_Width 每行棋盘格内点的个数或圆点的个数 -->
+  <BoardSize_Width>7</BoardSize_Width>
+  <!-- BoardSize_Height 每列棋盘格内点的个数或圆点的个数 -->
+  <BoardSize_Height>7</BoardSize_Height>
+  <!-- 棋盘格、圆心之间的距离（mm） -->
+  <BoardSize_SquareSize> 12 </BoardSize_SquareSize>
+  <!-- 如果为真（非零），则仅将 fy 作为自由参数，fx/fy 的比率与输入 cameraMatrix 中的比率相同-->
+  <Calibrate_FixAspectRatio>1</Calibrate_FixAspectRatio>
+  <!-- 如果为真（非零）, 切向失真系数设置为零，并保持为零-->
+  <Calibrate_AssumeZeroTangentialDistortion>1</Calibrate_AssumeZeroTangentialDistortion>
+  <!-- 如果为真（非零），则在全局优化期间不改变主点-->
+  <Calibrate_FixPrincipalPointAtTheCenter> 0 </Calibrate_FixPrincipalPointAtTheCenter>
+  <!-- 如果为真（非零），则径向畸变的 k1 设置为零 -->
+  <Calibrate_AssumeZerok1Distortion>0</Calibrate_AssumeZerok1Distortion>
+  <!-- 如果为真（非零），则径向畸变的 k2 设置为零。 -->
+  <Calibrate_AssumeZerok2Distortion>0</Calibrate_AssumeZerok2Distortion>
+  <Calibrate_AssumeZerok3Distortion>1</Calibrate_AssumeZerok3Distortion>
+</Settings>
+</opencv_storage>

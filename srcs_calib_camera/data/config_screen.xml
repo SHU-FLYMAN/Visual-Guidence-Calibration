@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<Settings>
+  <!-- ######### 相移参数 #########-->
+  <!-- N 只能是4、8、16、32 -->
+  <N> 32 </N>
+  <n> 5 </n>
+  <iter_num> 4 </iter_num>
+  <B_min> 0.05 </B_min>
+  <A> 130 </A>
+  <B> 90 </B>
+  <!-- ######### 屏幕配置 #########-->
+  <!-- Ipad 6代屏幕：9.7寸（4:3）-->
+  <inch> 25.4 </inch>
+  <Screen_Size> 9.7 </Screen_Size>
+  <Screen_Width_Ratio> 4 </Screen_Width_Ratio>
+  <Screen_Height_Ratio> 3 </Screen_Height_Ratio>
+  <Screen_Width_Pixel>  2048 </Screen_Width_Pixel>
+  <Screen_Height_Pixel> 1536 </Screen_Height_Pixel>
+  <image_Width> 2048 </image_Width>
+  <image_Height> 2048 </image_Height>
+  <!-- ######### 标定配置 #########-->
+  <!-- BoardSize_Width 每行棋盘格内点的个数或圆点的个数 -->
+  <BoardSize_Width>13</BoardSize_Width>
+  <!-- BoardSize_Height 每列棋盘格内点的个数或圆点的个数 -->
+  <BoardSize_Height>9</BoardSize_Height>
+  <!-- 如果为真（非零），则仅将 fy 作为自由参数，fx/fy 的比率与输入 cameraMatrix 中的比率相同-->
+  <Calibrate_FixAspectRatio>1</Calibrate_FixAspectRatio>
+  <!-- 如果为真（非零）, 切向失真系数设置为零，并保持为零-->
+  <Calibrate_AssumeZeroTangentialDistortion>1</Calibrate_AssumeZeroTangentialDistortion>
+  <!-- 如果为真（非零），则在全局优化期间不改变主点-->
+  <Calibrate_FixPrincipalPointAtTheCenter> 0 </Calibrate_FixPrincipalPointAtTheCenter>
+  <!-- 如果为真（非零），则径向畸变的 k1 设置为零 -->
+  <Calibrate_AssumeZerok1Distortion>0</Calibrate_AssumeZerok1Distortion>
+  <!-- 如果为真（非零），则径向畸变的 k2 设置为零。 -->
+  <Calibrate_AssumeZerok2Distortion>0</Calibrate_AssumeZerok2Distortion>
+  <Calibrate_AssumeZerok3Distortion>1</Calibrate_AssumeZerok3Distortion>
+</Settings>
+</opencv_storage>
