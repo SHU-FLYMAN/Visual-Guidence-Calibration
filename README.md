@@ -156,8 +156,8 @@ If you find our code or paper is useful, please consider citing:
 
 In addition, the codes to calculate the next best pose is modified from the URL: https://github.com/pengsongyou/CalibrationWizard. The differences of their work and us are that: 
 
-- Corner uncertainty’s calculation of us is more simple because our way is limit to 
-- Inclination angle of poses is limited that only \le 30 ^\circ because we
+- Corner uncertainty’s calculation of us is more simple because our way is more robustness to camera defocus.
+- Inclination angle of poses is limited that only 30°  because the inference of moiré phenomenon.
 
 Thus, please also consider citing the research:
 
