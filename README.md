@@ -31,7 +31,7 @@ Let's us to explain how to use our code:
 
 1. Download the code, and to config the environment of VS2015、OpenCV3X、QT5.12.X and Flycapture2. 
 
-   - VS2015: to downloaded in the URL: https://visualstudio.microsoft.com/vs/older-downloads/
+   - VS2015: to download in the URL: https://visualstudio.microsoft.com/vs/older-downloads/
    - OpenCV: to download 3.4X version in the URL: https://sourceforge.net/projects/opencvlibrary/files/3.4.15/opencv-3.4.15-vc14_vc15.exe/download
    - FlyCapture2: to download `FlyCapture_2.13.3.61_.exe` from the URL: https://meta.box.lenovo.com/v/link/view/ea3d78f8daaa499eaff33fef95251b41
    - QT5.12.11: to download from the URL: https://download.qt.io/archive/qt/5.12/5.12.12/
