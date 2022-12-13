@@ -1,10 +1,10 @@
 # A visual guidance calibration method for out-of-focus camera based on iterative phase target
 
-This responsory is the code of the paper <A visual guidance calibration method for out-of-focus camera based on iterative phase target>. 
+This responsory is the code of the paper “A visual guidance calibration method for out-of-focus camera based on iterative phase target”. 
 
 The innovation of this paper is that the defocus error and singularity of the solution are considered together compared with the previous works. But it is also more time consuming and sensitive to ambient light by adopting phase-shift targets.
 
-Fig.1 shows the comparison of calibration results between screen-targets under different distances, and can be found that it (phase-iter) is robustness to defocus for camera calibration whether the working distance changed from d1 to d3. More details can be seen in our paper.
+Fig.1 shows the comparison of calibration results between screen-targets under different distances, and can be found that it (phase-iter) is robustness to defocus for camera calibration whether the working distance changed from d1 to d3. 
 
 |    ![image-20221213122459941](assets/202212131224999.png)    |
 | :----------------------------------------------------------: |
